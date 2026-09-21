@@ -86,6 +86,8 @@ export default {
 
 .hero-banner {
     position: relative;
+    container-name: layout-section;
+    container-type: inline-size;
 
     &:before {
         @include media-breakpoint-up('contained') {
@@ -155,7 +157,7 @@ export default {
     &__content {
         position: absolute;
         right: calc(-1 * var(--spacing-xxl));
-        bottom: calc(-1 * var(--spacing-xxl));
+        bottom: 0;
         transform: rotate(2deg);
         display: flex;
         justify-content: flex-end;
@@ -169,7 +171,6 @@ export default {
         }
 
         @include container-width-up('contained') {
-            bottom: calc(-1 * var(--spacing-xxl));
         }
 
         &__copy {

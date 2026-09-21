@@ -23,16 +23,6 @@ body {
 	@media (min-width: 400px) {
 		overflow-x: hidden;
 	}
-
-	footer:last-child {
-		margin-top: auto;
-	}
-
-	> header, > footer, > section, > main {
-		container-name: layout-section;
-		container-type: inline-size;
-		position: relative;
-	}
 }
 
 .markdown-body {

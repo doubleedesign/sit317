@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <footer class="global-footer" data-background="light">
+    <footer class="global-footer" data-background="primary">
         <SocialLinks/>
         <p>UniNexus is a fictional concept, developed for SIT317 IT Innovations and Entrepreneurship at Deakin University, Trimester 2 2026.</p>
         <p>This landing page is by Leesa Ward, student ID 217493588. Source code: <a href="https://github.com/doubleedesign/sit317" target="_blank">GitHub</a>.</p>
@@ -29,6 +29,10 @@ export default {
 
         a {
             @include link-underline-on-hover();
+
+            &:hover, &:focus, &:active {
+                color: var(--color-secondary);
+            }
         }
     }
 }

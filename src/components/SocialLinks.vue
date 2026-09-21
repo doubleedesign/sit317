@@ -46,7 +46,7 @@ export default {
         }
 
         a {
-            color: var(--color-primary);
+            color: var(--color-secondary);
 
             &:hover, &:focus, &:active {
                 color: var(--color-accent);

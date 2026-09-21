@@ -3,6 +3,7 @@
 @use 'bem-mixin' as *;
 @use 'bem-class-selectors' as *;
 @use 'functions' as *;
+@use 'buttons';
 
 :root {
 	--font-family-body: sans-serif;
@@ -168,18 +169,7 @@ p:empty {
 
 .is-style-lead,
 .lead {
-	font-weight: var(--font-weight-bold);
-	font-size: calc(1rem * var(--typescale));
-	line-height: 1.2;
-	color: var(--theme-color);
-
-	a {
-		color: inherit;
-
-		&:hover, &:focus, &:active {
-			color: color-mix(in hsl, currentColor, black 20%);
-		}
-	}
+	@include lead-paragraph();
 }
 
 blockquote {
