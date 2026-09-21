@@ -138,25 +138,25 @@ export default {
         ul {
             display: flex;
             justify-content: flex-end;
-            gap: var(--spacing-md);
+            gap: var(--spacing-lg);
             list-style: none;
             padding: 0;
             margin: 0;
             --theme-color: var(--color-secondary);
 
             li {
-                font-weight: var(--font-weight-semibold);
+                font-weight: var(--font-weight-bold);
                 margin: 0;
+                text-transform: uppercase;
+                font-size: 1.1rem;
 
                 a {
                     @include link-underline-on-hover();
                     text-decoration-color: transparent;
-                    opacity: 0.7;
 
                     &[aria-current="page"] {
                         @include active-link();
                         color: var(--color-secondary);
-                        opacity: 1;
                     }
                 }
             }
