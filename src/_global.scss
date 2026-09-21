@@ -3,120 +3,116 @@
 @use './bem-class-selectors' as *;
 
 :root {
-	--width-wide: #{map-get($widths, 'wide')};
-	--width-contained: #{map-get($widths, 'contained')};
-	--width-narrow: #{map-get($widths, 'narrow')};
-	--width-narrower: #{map-get($widths, 'narrower')};
-	--width-small: #{map-get($widths, 'small')};
+  --width-wide: #{map-get($widths, 'wide')};
+  --width-contained: #{map-get($widths, 'contained')};
+  --width-narrow: #{map-get($widths, 'narrow')};
+  --width-narrower: #{map-get($widths, 'narrower')};
+  --width-small: #{map-get($widths, 'small')};
 
-	--spacing-xxs: 0.25rem;
-	/* Augmented fourth scale - 1.414 */
-	--spacing-xs: 0.5rem;
-	--spacing-sm: 0.707rem;
-	--spacing-md: 1rem;
-	--spacing-lg: 1.414rem;
-	--spacing-xl: 2rem;
-	--spacing-xxl: 2.827rem;
+  --spacing-xxs: 0.25rem;
+  /* Augmented fourth scale - 1.414 */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.707rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.414rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 2.827rem;
 
-	@each $name, $values in $colors {
-		--color-#{$name}: #{map-get($colors, '#{$name}')};
-	}
+  @each $name, $values in $colors {
+    --color-#{$name}: #{map-get($colors, '#{$name}')};
+  }
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 [data-size] {
-	width: 100%;
-	display: block;
-	container-name: layout-section;
-	container-type: inline-size;
-	padding-inline: calc((100cqw - var(--container-max-width)) / 2);
-	@include pad-edges();
+  width: 100%;
+  display: block;
+  container-name: layout-section;
+  container-type: inline-size;
+  padding-inline: calc((100cqw - var(--container-max-width)) / 2);
+  @include pad-edges();
 
-	> * {
-		width: 100%;
-	}
+  > * {
+    width: 100%;
+  }
 }
 
 @each $name, $size in $widths {
-	[data-size="#{$name}"] {
-		--container-max-width: var(--width-#{$name});
-	}
+  [data-size="#{$name}"] {
+    --container-max-width: var(--width-#{$name});
+  }
 }
 
 [data-size="full"] {
-	--container-max-width: 100%;
-}
-
-header, section, main {
-	@include section-padding();
+  --container-max-width: 100%;
 }
 
 [data-valign],
 [data-halign] {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 // Default alignments. Note that components can override with their own stuff that they do with these values,
 // for example orientation for Tabs is about where the tablist is.
 [data-valign="start"] {
-	align-items: flex-start;
+  align-items: flex-start;
 }
 
 [data-valign="center"] {
-	align-items: center;
+  align-items: center;
 }
 
 [data-valign="end"] {
-	align-items: flex-end;
+  align-items: flex-end;
 }
 
 [data-valign="match-parent"] {
-	align-items: inherit;
+  align-items: inherit;
 }
 
 [data-halign="start"] {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 
 [data-halign="center"] {
-	justify-content: center;
+  justify-content: center;
 }
 
 [data-halign="end"] {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 [data-halign="justify"] {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 [data-halign="match-parent"] {
-	justify-content: inherit;
+  justify-content: inherit;
 }
 
 [data-orientation="horizontal"] {
-	display: flex;
-	flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 [data-orientation="vertical"] {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 [data-group-layout="list"] {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing-lg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
 }
 
 [data-group-layout="grid"] {
-	@include grid-layout();
+  @include grid-layout();
 }
 
 /*-------------------------------------------------------------------
@@ -126,74 +122,74 @@ header, section, main {
   and/or within components where appropriate using the --theme-color variable set here
 ------------------------------------------------------------------ */
 [data-background] {
-	background: var(--background-color);
-	--theme-color: contrast-color(var(--background-color));
-	color: contrast-color(var(--background-color));
+  background: var(--background-color);
+  --theme-color: contrast-color(var(--background-color));
+  color: contrast-color(var(--background-color));
 
-	> [data-background],
-	> [data-vue-component]:has(>[data-background]) > [data-background] {
-		@include section-padding();
-		@include section-padding-inline();
-	}
+  > [data-background],
+  > [data-vue-component]:has(>[data-background]) > [data-background] {
+    @include section-padding();
+    @include section-padding-inline();
+  }
 }
 
 [data-color-theme] {
-	// This can be contextually changed to do things like yellow on a navy background instead of white, while keeping this sensible default
-	--theme-color-inverse: contrast-color(var(--theme-color));
-	// Note: color: var(--theme-color) is not set here because we probably don't want *everything* to be that colour.
-	// It should be applied selectively to things like headings and component-specific elements as appropriate.
+  // This can be contextually changed to do things like yellow on a navy background instead of white, while keeping this sensible default
+  --theme-color-inverse: contrast-color(var(--theme-color));
+  // Note: color: var(--theme-color) is not set here because we probably don't want *everything* to be that colour.
+  // It should be applied selectively to things like headings and component-specific elements as appropriate.
 }
 
 $colorNames: map-keys($colors);
 @each $colorName in $colorNames {
-	body[data-global-background="#{$colorName}"] {
-		background-color: var(--color-#{$colorName});
-		--theme-color: contrast-color(var(--color-#{$colorName}));
-	}
+  body[data-global-background="#{$colorName}"] {
+    background-color: var(--color-#{$colorName});
+    --theme-color: contrast-color(var(--color-#{$colorName}));
+  }
 
-	[data-background="#{$colorName}"] {
-		--background-color: var(--color-#{$colorName});
-		--active-color: var(--color-secondary); // can be contextually changed where this default doesn't suit
-	}
+  [data-background="#{$colorName}"] {
+    --background-color: var(--color-#{$colorName});
+    --active-color: var(--color-secondary); // can be contextually changed where this default doesn't suit
+  }
 
-	// If a parent and direct child have the same background, remove the nested padding
-	[data-background="#{$colorName}"] > [data-background="#{$colorName}"] {
-		padding: 0;
-	}
+  // If a parent and direct child have the same background, remove the nested padding
+  [data-background="#{$colorName}"] > [data-background="#{$colorName}"] {
+    padding: 0;
+  }
 
-	// Remove the next sibling's background if it is the same colour as this component's background (or likewise for bottom/top of gradient)
-	[data-background="#{$colorName}"] + [data-background="#{$colorName}"],
-		// orif data-background ends with $colourName + sibling's data-background starts with $colourName
-	[data-background$="#{$colorName}"] + [data-background^="#{$colorName}"] {
-		padding-block-start: 0;
-	}
+  // Remove the next sibling's background if it is the same colour as this component's background (or likewise for bottom/top of gradient)
+  [data-background="#{$colorName}"] + [data-background="#{$colorName}"],
+    // orif data-background ends with $colourName + sibling's data-background starts with $colourName
+  [data-background$="#{$colorName}"] + [data-background^="#{$colorName}"] {
+    padding-block-start: 0;
+  }
 
-	// If presumably top-level elements do not have a background explicitly set, treat them as though they have the global background
-	// FIXME this isn't working with "starts with" i.e., gradients
-	@container body style(--global-background: $colorName) {
-		main > * {
-			&:not([data-background]) + [data-background="#{$colorName}"],
-			&:not([data-background]) + [data-background^="#{$colorName}"] {
-				padding-block-start: 0;
-			}
-		}
-	}
+  // If presumably top-level elements do not have a background explicitly set, treat them as though they have the global background
+  // FIXME this isn't working with "starts with" i.e., gradients
+  @container body style(--global-background: $colorName) {
+    main > * {
+      &:not([data-background]) + [data-background="#{$colorName}"],
+      &:not([data-background]) + [data-background^="#{$colorName}"] {
+        padding-block-start: 0;
+      }
+    }
+  }
 }
 
 // If presumably top-level elements do not have a background explicitly set, collapse padding
 body > header,
 main > *,
 body > footer {
-	&:not([data-background]) + :not([data-background]) {
-		padding-block-start: 0;
-	}
+  &:not([data-background]) + :not([data-background]) {
+    padding-block-start: 0;
+  }
 }
 
 // Separate loop for color theme to ensure it takes precedence in the cascade
 // (e.g., so data-background="white" isn't further down in the CSS than data-color-theme="primary",
 // causing an element with both attributes to end up with the wrong text color)
 @each $colorName in $colorNames {
-	[data-color-theme="#{$colorName}"] {
-		--theme-color: var(--color-#{$colorName});
-	}
+  [data-color-theme="#{$colorName}"] {
+    --theme-color: var(--color-#{$colorName});
+  }
 }

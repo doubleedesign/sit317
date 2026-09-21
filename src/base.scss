@@ -11,3 +11,13 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+#app {
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+
+	footer:last-child {
+		margin-top: auto;
+	}
+}

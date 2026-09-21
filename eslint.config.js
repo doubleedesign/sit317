@@ -16,7 +16,7 @@ const baseConfig = {
 		'object-curly-newline': 'off',
 		'padding-line-between-statements': [
 			'error',
-			{ 
+			{
 				blankLine: 'always',
 				prev: '*',
 				next: 'return'
@@ -98,6 +98,14 @@ export default [
 		rules: {
 			...baseConfig.rules,
 			'vue/multi-word-component-names': 'off',
+			'max-len': [
+				'warn',
+				{
+					'comments': 160,
+					'code': 240,
+					'tabWidth': 4
+				}
+			],
 		},
 	},
 	{
