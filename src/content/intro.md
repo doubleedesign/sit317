@@ -1,0 +1,1 @@
+It's like speed networking, but for uni mates.

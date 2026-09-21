@@ -98,6 +98,7 @@ export default {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
+    z-index: 300;
 
     @include media-breakpoint-up('small') {
         flex-direction: row;
@@ -115,8 +116,8 @@ export default {
             color: var(--color-secondary);
             cursor: pointer;
             position: absolute;
-            top: var(--spacing-md);
-            left: var(--spacing-md);
+            top: var(--spacing-xl);
+            left: 0;
             z-index: 200;
             background: 0;
             border: 0;
@@ -161,7 +162,6 @@ export default {
             }
         }
 
-
         &--overlay {
             position: fixed;
             top: 0;
@@ -169,9 +169,11 @@ export default {
             right: 0;
             bottom: 0;
             z-index: -100;
+            pointer-events: none;
 
             &[data-open="true"] {
                 z-index: 100;
+                pointer-events: unset;
             }
 
             .v-enter-active,
@@ -208,29 +210,31 @@ export default {
     }
 
     &__logo {
-        padding-inline: var(--spacing-md);
+        padding-inline: 1rem; // using precise numbers here so the calcs for the triangle size work neatly
         background: var(--color-light);
         position: relative;
         width: fit-content;
+        filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.25));
 
         &:after {
             content: '';
             width: 0;
             height: 0;
             border-style: solid;
-            border-width: var(--spacing-md) calc(60px + calc(0.5 * var(--spacing-md))) 0 calc(60px + calc(0.5 * var(--spacing-md)));
+            border-width: var(--spacing-xl) 4rem 0 4rem;
+            bottom: calc(-1 * var(--spacing-xl));
             border-color: var(--color-light) transparent transparent transparent;
             transform: rotate(0deg);
             position: absolute;
             left: 0;
             right: 0;
-            bottom: calc(-1 * var(--spacing-md));
         }
 
         img {
-            max-width: 100px;
+            width: 6rem; // using precise value here so the calcs for the triangle size work neatly
             display: block;
             padding-block-start: var(--spacing-md);
+            padding-block-end: 0.25rem;
         }
     }
 }
