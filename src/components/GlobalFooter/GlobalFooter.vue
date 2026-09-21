@@ -11,7 +11,11 @@ export default {};
 
 <style scoped lang="scss">
 .global-footer {
+	padding-block: var(--spacing-md);
 	text-align: center;
-	padding-block: 1rem;
+
+	p {
+		margin-block: var(--spacing-xs);
+	}
 }
 </style>

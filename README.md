@@ -1,42 +1,17 @@
-# sit317
+# SIT317 Project Landing Page
 
-This template should help get you started developing with Vue 3 in Vite.
+A landing page for a product my team is working on in SIT317 IT Innovations & Entrepreneurship at Deakin University,
+Trimester 2 2026.
 
-## Recommended IDE Setup
+## Credits
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- **Font:** [Quicksand by Andrew Paglinawan](https://fonts.google.com/specimen/Quicksand)
+- The page is built as a small [Vue.js](https://vuejs.org/) app
+- Much of the foundational SCSS code is derived from my own
+  library, [Comet Components](https://www.github.com/doubleedesign/comet-components)
+- To generate the boilerplate for each Vue component, I used a tool I had developed
+  previously - [generate-vue-cli](https://www.npmjs.com/package/generate-vue-cli)
+- The logo was designed by team member Passion Nguyen
+- I used [ColorSpace](https://mycolor.space/?hex=%236C66A2&sub=1) to select the rest of my colour palette based on the
+  logo's colours.
 
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```

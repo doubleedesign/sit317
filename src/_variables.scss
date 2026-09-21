@@ -1,0 +1,23 @@
+@use './functions' as *;
+
+$widths: (
+	'wide': 1440px,
+	'contained': 1140px,
+	'narrow': 940px,
+	'narrower': 768px,
+	'small': 600px
+);
+
+$colors: (
+	'primary': darken(#6c66a2, 10%),
+	'secondary': #d6c077,
+	/* https://mycolor.space/?hex=%236C66A2&sub=1 */
+	'accent': #ff9980,
+	'info': #008aac,
+	'warning': #ffc669,
+	'success':#00c898,
+	'error': #a55653,
+	'light': #f5f5f7,
+	'dark': #474554,
+	'white': #ffffff
+);
