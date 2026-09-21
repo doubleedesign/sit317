@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 :root {
   --width-wide: 1440px;
   --width-contained: 1140px;
@@ -15,11 +16,11 @@
   --spacing-xxl: 2.827rem;
   --color-primary: rgb(93.24, 83.55, 180.45);
   --color-secondary: rgb(249.4, 211.0042105263, 83.6);
-  --color-accent: #ff9980;
+  --color-accent: #fa648f;
   --color-info: #008aac;
-  --color-warning: #ffc669;
-  --color-success: #00c898;
-  --color-error: #a55653;
+  --color-warning: #ffc25d;
+  --color-success: #00c89b;
+  --color-error: #b03434;
   --color-light: #f5f5f7;
   --color-dark: color-mix(in srgb, var(--color-#474554) 95%, black);
   --color-white: #ffffff;
@@ -684,7 +685,7 @@ a:not([class$=__button]) {
   text-decoration-thickness: 1px;
   text-decoration-color: currentColor;
   text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 a:not(.button):hover, a:not(.button):focus, a:not(.button):active,
 a:not([class$=__button]):hover,
@@ -702,7 +703,7 @@ a:not([class$=__button]):has(> span) > span:not(:has(svg)):not(:has(i)) {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-decoration-color: currentColor;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in-out;
   text-decoration-color: transparent;
 }
 a:not(.button):has(> span):hover > span:not(:has(svg)):not(:has(i)), a:not(.button):has(> span):focus > span:not(:has(svg)):not(:has(i)), a:not(.button):has(> span):active > span:not(:has(svg)):not(:has(i)),

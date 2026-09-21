@@ -9,5 +9,16 @@
 <body>
 <div id="app"></div>
 <script type="module" src="/src/main.ts"></script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css"/>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('[data-tippy-content]', {
+            appendTo: 'parent',
+            animation: 'scale-subtle',
+        });
+    });
+</script>
 </body>
 </html>
