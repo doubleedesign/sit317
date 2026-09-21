@@ -97,7 +97,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.25);
+    @include curved-shadow();
     z-index: 300;
 
     @include media-breakpoint-up('small') {
@@ -106,7 +106,7 @@ export default {
     }
 
     &__menu {
-        padding-block: var(--spacing-md);
+        padding-block-start: var(--spacing-md);
 
         @include container-width-up('small') {
             width: auto;
@@ -138,25 +138,28 @@ export default {
         ul {
             display: flex;
             justify-content: flex-end;
-            gap: var(--spacing-lg);
             list-style: none;
             padding: 0;
             margin: 0;
             --theme-color: var(--color-secondary);
+            margin-block-end: -0.25rem;
 
             li {
                 font-weight: var(--font-weight-bold);
                 margin: 0;
                 text-transform: uppercase;
-                font-size: 1.1rem;
 
                 a {
                     @include link-underline-on-hover();
                     text-decoration-color: transparent;
+                    padding: var(--spacing-xs) var(--spacing-md);
+                    display: block;
 
                     &[aria-current="page"] {
-                        @include active-link();
-                        color: var(--color-secondary);
+                        background: var(--color-secondary);
+                        color: contrast-color(var(--color-secondary));
+                        transform: rotate(2deg) translateY(-0.125rem);
+                        font-size: 1.1rem;
                     }
                 }
             }
