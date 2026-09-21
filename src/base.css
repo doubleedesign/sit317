@@ -813,6 +813,7 @@ p:empty {
   font-size: calc(1rem * var(--typescale));
   line-height: 1.2;
   color: var(--theme-color);
+  text-wrap: balance;
 }
 .is-style-lead a,
 .lead a {

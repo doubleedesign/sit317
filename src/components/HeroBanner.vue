@@ -204,6 +204,7 @@ export default {
 
                 h2 {
                     font-weight: var(--font-weight-light);
+                    font-size: var(--font-size-md);
 
                     strong {
                         font-weight: var(--font-weight-bold);
