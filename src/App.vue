@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import GlobalHeader from '@/components/GlobalHeader/GlobalHeader.vue';
-import GlobalFooter from '@/components/GlobalFooter/GlobalFooter.vue';
+import GlobalHeader from '@/components/GlobalHeader.vue';
+import GlobalFooter from '@/components/GlobalFooter.vue';
 </script>
 
 <template>
