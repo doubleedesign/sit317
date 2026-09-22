@@ -70,10 +70,10 @@ export default {
 
 <template>
     <section class="hero-banner" data-background="light">
-        <div class="hero-banner__image" :data-aspect-ratio="aspectRatio">
+        <div class="hero-banner__image" :data-aspect-ratio="aspectRatio" data-animate-into-view="fadeIn">
             <img src="/banner-image.jpg" alt="Group of students socialising at university"/>
         </div>
-        <div class="hero-banner__content" data-size="wide">
+        <div class="hero-banner__content" data-size="wide" data-animate-into-view="fadeInDown" data-animation-threshold="0.25">
             <div class="hero-banner__content__copy" data-background="secondary">
                 <Content/>
             </div>
@@ -119,6 +119,7 @@ export default {
     &__image {
         transition: aspect-ratio 0.2s ease-in-out;
         height: 100%;
+        animation-delay: 0.6s;
 
         img {
             display: block;
@@ -162,6 +163,7 @@ export default {
         display: flex;
         justify-content: flex-end;
         z-index: 20;
+        animation-delay: 0.6s;
 
         @include container-width-up('narrow') {
             left: 0;

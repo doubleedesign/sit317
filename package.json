@@ -11,6 +11,7 @@
 		"type-check": "vue-tsc --build"
 	},
 	"dependencies": {
+		"@doubleedesign/animate-into-view": "^2.0.0",
 		"markdown-it-footnote": "^4.0.0",
 		"unplugin-vue-markdown": "^32.1.1",
 		"vue": "^3.5.42"

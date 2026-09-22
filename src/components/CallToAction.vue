@@ -4,7 +4,7 @@ export default {};
 
 <template>
     <section class="call-to-action" data-size="narrow">
-        <div class="call-to-action__inner" data-background="secondary">
+        <div class="call-to-action__inner" data-background="secondary" data-animate-into-view="fadeInUp" data-animation-threshold="0.5">
             <div class="call-to-action__inner__content">
                 <h2>Level up <strong>this O Week</strong></h2>
                 <p>Run a SpeedFriending event and kick-start campus culture in 2027!</p>

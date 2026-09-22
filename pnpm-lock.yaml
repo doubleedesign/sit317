@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@doubleedesign/animate-into-view':
+        specifier: ^2.0.0
+        version: 2.0.0
       markdown-it-footnote:
         specifier: ^4.0.0
         version: 4.0.0
@@ -223,6 +226,9 @@ packages:
 
   '@cacheable/utils@2.5.0':
     resolution: {integrity: sha512-buipgOVDkkPXNR5+xBpDw7Zk2n1EvU7qBJCNUcL7rhQ//kfpOXPAvQ511Os0vpLYJ1pZnvudNytkQt2hst3wqA==}
+
+  '@doubleedesign/animate-into-view@2.0.0':
+    resolution: {integrity: sha512-gv+M9GFx/c09FYQ/AvErgYx//HUOva17Q+6/nusY3YhoCuaKvo65GkLCsncQytusKhkV81xoZB6OWx6WCKUaLw==}
 
   '@eslint-community/eslint-utils@4.10.1':
     resolution: {integrity: sha512-cuadcxVFE8sDK6iWJbs8Sn0av2Nrh2QSGQhVlBW9AaAHqHwjWsZHT8LJ4hFGPh7ASBV2deFdM7H/DPjulmh8rg==}
@@ -2206,6 +2212,8 @@ snapshots:
     dependencies:
       hashery: 1.5.1
       keyv: 5.6.0
+
+  '@doubleedesign/animate-into-view@2.0.0': {}
 
   '@eslint-community/eslint-utils@4.10.1(eslint@10.11.0)':
     dependencies:

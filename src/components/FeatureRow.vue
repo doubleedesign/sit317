@@ -36,7 +36,12 @@ export default {
     <div class="features" data-size="wide" data-background="accent">
         <TextBlock content="features"/>
         <ul class="features__list" data-group-layout="grid" data-max-per-row="3">
-            <li v-for="(feature, index) in features" :key="index" class="features__list__item" data-background="white">
+            <li v-for="(feature, index) in features" :key="index"
+                class="features__list__item"
+                data-background="white"
+                data-animate-into-view="fadeInLeft"
+                data-animation-threshold="0.75"
+            >
                 <div v-if="feature.image" class="features__list__item__image" data-aspect-ratio="wide">
                     <img :src="`/${feature.image}`" alt=""/>
                 </div>
@@ -78,6 +83,16 @@ export default {
         &__item {
             list-style: none;
             @include curved-shadow();
+
+            @include media-breakpoint-up('narrow') {
+                &:nth-child(3n+2) {
+                    animation-delay: 0.6s;
+                }
+
+                &:nth-child(3n+3) {
+                    animation-delay: 0.9s;
+                }
+            }
 
             &__image {
 

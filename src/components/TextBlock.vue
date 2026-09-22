@@ -34,7 +34,9 @@ export default {
 
 <template>
     <div :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
-        <component :is="MarkdownFileContent"/>
+        <div data-animate-into-view="fadeIn">
+            <component :is="MarkdownFileContent"/>
+        </div>
     </div>
 </template>;
 

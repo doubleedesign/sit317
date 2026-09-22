@@ -18,6 +18,7 @@ Trimester 2 2026.
 - The page is built as a small [Vue.js](https://vuejs.org/) app, with [unplugin-vue-markdown](https://www.npmjs.com/package/unplugin-vue-markdown) and [markdown-it-footnote](https://www.npmjs.com/package/markdown-it-footnote) to allow
   writing the content in Markdown files with footnotes for easy referencing
 - Much of the foundational SCSS code and some of the Vue component code is derived from my own previously developed library, [Comet Components](https://www.github.com/doubleedesign/comet-components)
+- Animations use a library I developed previously, [Animate-Into-View](https://www.npmjs.com/package/@doubleedesign/animate-into-view)
 - I used [Tippy.js](https://atomiks.github.io/tippyjs/) for the styled, animated tooltips
 - To generate the boilerplate for each Vue component, I used a tool I had developed previously - [generate-vue-cli](https://www.npmjs.com/package/generate-vue-cli)
 - The logo was designed by team member Passion Nguyen

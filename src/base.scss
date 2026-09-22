@@ -14,8 +14,11 @@ body {
 	margin: 0;
 }
 
+[data-animate-into-view] {
+	animation-delay: 0.3s;
+}
+
 #app {
-	min-height: 100dvh;
 	display: flex;
 	flex-direction: column;
 	min-width: 420px;

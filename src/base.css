@@ -899,12 +899,6 @@ figure figcaption {
   color: var(--theme-color);
 }
 
-[data-aspect-ratio] {
-    img {
-  
-    }
-}
-
 [data-aspect-ratio=square] {
   aspect-ratio: 1/1;
 }
@@ -947,8 +941,11 @@ body {
   margin: 0;
 }
 
+[data-animate-into-view] {
+  animation-delay: 0.3s;
+}
+
 #app {
-  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   min-width: 420px;
