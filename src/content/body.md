@@ -5,4 +5,6 @@ meeting classmates and forming groups of friends at uni.
 
 ### Why tho?
 
-(references/stats to go here)
+(references/stats to go here)[^1]
+
+[^1]: Some reference here

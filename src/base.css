@@ -962,5 +962,84 @@ body {
 .markdown-body h1:first-child {
   margin-block-start: var(--spacing-md);
 }
+.markdown-body__footer__footnotes:is(details) {
+  interpolate-size: allow-keywords;
+  padding: var(--spacing-md);
+  border-radius: var(--spacing-sm);
+  transition: all 0.2s ease;
+  transform: translateX(-1rem);
+}
+.markdown-body__footer__footnotes:is(details) summary {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: transparent;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-family: var(--font-family-accent);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
+  line-height: 1.2;
+}
+@media (min-width: 1440px) {
+  .markdown-body__footer__footnotes:is(details) summary {
+    font-size: var(--font-size-md);
+  }
+}
+.markdown-body__footer__footnotes:is(details) summary:hover, .markdown-body__footer__footnotes:is(details) summary:focus, .markdown-body__footer__footnotes:is(details) summary:active, :has([open]) .markdown-body__footer__footnotes:is(details) summary {
+  color: var(--color-primary);
+  text-decoration-color: currentColor;
+}
+.markdown-body__footer__footnotes:is(details) summary::marker {
+  display: none;
+  font-size: 0;
+}
+.markdown-body__footer__footnotes:is(details) summary i, .markdown-body__footer__footnotes:is(details) summary svg {
+  transition: all 0.2s ease;
+  display: inline-block;
+  transform-origin: center center;
+  width: 1.2rem;
+  height: 1.2rem;
+  font-size: 1rem;
+}
+:has([open]) .markdown-body__footer__footnotes:is(details) summary i, :has([open]) .markdown-body__footer__footnotes:is(details) summary svg {
+  transform: rotate(90deg);
+}
+.markdown-body__footer__footnotes:is(details):open {
+  background: var(--color-light);
+  transform: translateX(0);
+}
+@supports selector(details::details-content) {
+  .markdown-body__footer__footnotes:is(details)::details-content {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    content-visibility: hidden;
+    transition: height 0.2s ease, opacity 0.2s ease, content-visibility 0.2s allow-discrete;
+  }
+  .markdown-body__footer__footnotes:is(details):open::details-content {
+    height: auto;
+    opacity: 1;
+    content-visibility: visible;
+  }
+  @supports not (interpolate-size: allow-keywords) {
+    .markdown-body__footer__footnotes:is(details)::details-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.2s ease-in-out, opacity 0.2s ease, content-visibility 0.2s allow-discrete;
+    }
+    .markdown-body__footer__footnotes:is(details) ol {
+      overflow: hidden;
+      list-style-position: inside;
+      margin-inline: 0;
+    }
+    .markdown-body__footer__footnotes:is(details):open::details-content {
+      grid-template-rows: 1fr;
+    }
+  }
+}
 
 /*# sourceMappingURL=base.css.map */
