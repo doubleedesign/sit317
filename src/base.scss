@@ -65,9 +65,13 @@ body {
 						font-size: var(--font-size-md);
 					}
 
-					&:hover, &:focus, &:active, :has([open]) & {
-						color: var(--color-primary);
+					&:hover, &:focus {
+						color: var(--color-secondary);
 						text-decoration-color: currentColor;
+					}
+
+					&:active, :has([open]) & {
+						color: var(--color-primary);
 					}
 
 					&::marker {
@@ -91,6 +95,7 @@ body {
 
 				&:open {
 					background: var(--color-light);
+					color: contrast-color(var(--color-light));
 					transform: translateX(0);
 				}
 

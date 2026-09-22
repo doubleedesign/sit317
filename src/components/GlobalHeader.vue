@@ -97,7 +97,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @include curved-shadow();
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
     z-index: 300;
 
     @include media-breakpoint-up('small') {

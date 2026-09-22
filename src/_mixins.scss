@@ -154,6 +154,20 @@
 	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	outline: 1px solid transparent; // smooths jagged edges that the transform + shadow causes in Firefox
+	// create new stacking context - stops content from becoming blurry
+	isolation: isolate;
+	transform: translateZ(0);
+
+	// Workaround for stacking issue that makes the before and after sit on top once anti blurring / jagged edge fixes are applied
+	@each $colorName in map-keys($colors) {
+		&[data-background="#{$colorName}"] {
+			> div {
+				background: var(--color-#{$colorName});
+				position: relative;
+				z-index: 10;
+			}
+		}
+	}
 
 	&:before,
 	&:after {
@@ -164,7 +178,8 @@
 		box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
 		border-radius: 100%;
 		height: 20px;
-		transform: translateZ(-1px);; // Fixes stacking context issue caused by transforms on the element this mixin is applied to
+		z-index: -1;
+		transform: translateZ(-1px); // Fixes stacking context issue caused by transforms on the element this mixin is applied to
 	}
 
 	&:before {
@@ -189,6 +204,21 @@
 		&:hover, &:focus, &:active {
 			color: color-mix(in hsl, currentColor, black 20%);
 		}
+	}
+}
+
+@mixin accent-heading($color: primary) {
+	background: var(--color-#{$color});
+	color: contrast-color(var(--color-#{$color}));
+	padding: var(--spacing-xs) var(--spacing-lg);
+	width: fit-content;
+	line-height: 1;
+	font-family: var(--font-family-accent);
+	font-size: var(--font-size-lg);
+	transform: rotate(-2deg) translateX(-1rem);
+
+	@if $color == 'white' {
+		color: var(--color-accent);
 	}
 }
 

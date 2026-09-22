@@ -175,10 +175,11 @@ export default {
 
         &__copy {
             width: fit-content;
-            padding: var(--spacing-lg) var(--spacing-xl);
             @include curved-shadow();
 
             :deep(.markdown-body) {
+                padding: var(--spacing-lg) var(--spacing-xl);
+
                 h1 {
                     font-size: var(--font-size-xxl);
 
