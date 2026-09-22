@@ -4,8 +4,8 @@ import { defineAsyncComponent } from 'vue';
 export default {
 	props: {
 		color: {
-			type: String,
-			default: 'dark'
+			type: String || undefined,
+			default: undefined
 		},
 		content: {
 			type: String,
@@ -29,7 +29,7 @@ export default {
 </script>;
 
 <template>
-    <div class="text-block" data-size="narrow" :data-color-theme="color">
+    <div :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color">
         <component :is="MarkdownFileContent"/>
     </div>
 </template>;
