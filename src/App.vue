@@ -4,14 +4,16 @@ import GlobalFooter from '@/components/GlobalFooter.vue';
 import HeroBanner from '@/components/HeroBanner.vue';
 import TextBlock from '@/components/TextBlock.vue';
 import CallToAction from '@/components/CallToAction.vue';
+import FeatureRow from '@/components/FeatureRow.vue';
 </script>
 
 <template>
     <GlobalHeader/>
     <HeroBanner/>
     <main>
-        <TextBlock content="intro" color="accent"/>
-        <TextBlock content="body"/>
+        <TextBlock content="intro" color="accent" background="primary"/>
+        <TextBlock content="body" background="primary"/>
+        <FeatureRow/>
     </main>
     <CallToAction/>
     <GlobalFooter/>

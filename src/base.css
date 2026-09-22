@@ -632,7 +632,7 @@ body > footer:not([data-background]) + :not([data-background]) {
   --base-font-size: var(--font-size-sm);
   --typescale: 1.25;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
   :root {
     --base-font-size: 1rem;
     --typescale: 1.33;
@@ -897,6 +897,12 @@ figure figcaption {
 
 .inline-message {
   color: var(--theme-color);
+}
+
+[data-aspect-ratio] {
+    img {
+  
+    }
 }
 
 [data-aspect-ratio=square] {

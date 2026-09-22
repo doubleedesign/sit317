@@ -23,7 +23,7 @@ export default {};
 
 .call-to-action {
     z-index: 10;
-    background: linear-gradient(to bottom, white 0%, white 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+    background: linear-gradient(to bottom, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
     padding-block-end: var(--spacing-xl);
     margin-block-start: auto;
 

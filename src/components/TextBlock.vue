@@ -7,6 +7,10 @@ export default {
 			type: String || undefined,
 			default: undefined
 		},
+		background: {
+			type: String || undefined,
+			default: undefined
+		},
 		content: {
 			type: String,
 			default: ''
@@ -26,16 +30,17 @@ export default {
 	},
 	methods: {}
 };
-</script>;
+</script>
 
 <template>
-    <div :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color">
+    <div :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
         <component :is="MarkdownFileContent"/>
     </div>
 </template>;
 
 <style scoped lang="scss">
 @use '@/mixins' as *;
+@use '@/functions' as *;
 
 .text-block {
     padding-block: var(--spacing-xxl);
@@ -43,13 +48,15 @@ export default {
 
     &:first-child {
         :deep(.markdown-body) {
-            p:first-of-type {
+            p:first-child {
                 @include lead-paragraph();
                 font-size: var(--font-size-xl);
                 text-align: center;
                 font-weight: var(--font-weight-bold);
+                color: lighten('accent', 20%);
 
                 + p:last-of-type {
+                    font-size: 1.125rem;
                     text-align: center;
                 }
             }
@@ -57,15 +64,18 @@ export default {
     }
 
     :deep(.markdown-body) {
-        h3 {
-            background: var(--color-primary);
-            color: contrast-color(var(--color-primary));
-            padding: var(--spacing-xs) var(--spacing-lg);
-            width: fit-content;
-            line-height: 1;
-            font-family: var(--font-family-accent);
-            font-size: var(--font-size-lg);
-            transform: rotate(-2deg) translateX(-1rem);
+        h2 {
+            @include accent-heading();
+        }
+
+        &:not(:has(h2)) {
+            h3 {
+                @include accent-heading('white');
+
+                &:not(:first-child) {
+                    margin-block-start: var(--spacing-lg);
+                }
+            }
         }
     }
 
