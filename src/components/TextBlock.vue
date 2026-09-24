@@ -25,11 +25,40 @@ export default {
 			);
 		}
 	},
+	methods: {
+		handleClick(event: MouseEvent) {
+			const detailsPanel = (this.$refs.wrapperRef as HTMLElement).querySelector('details[class$="footnotes"]');
+			if (!detailsPanel) return;
+
+			// Check if it was a link that was clicked
+			const target = event.target as HTMLElement;
+			const link = target.closest('a');
+			if (!link) return;
+
+			// ...and that it was inside a <sup> element (i.e., is a footnote link)
+			const sup = link.closest('sup');
+			if (!sup) return;
+
+			// ...and if so, open the panel
+			(detailsPanel as HTMLDetailsElement).open = true;
+			//  stop the default scroll (to the element) and scroll to the top of the references instead
+			event.preventDefault();
+			(detailsPanel as HTMLDetailsElement).scrollIntoView({ behavior: 'smooth' });
+		}
+	},
+	mounted() {
+		this.$nextTick(() => {
+			(this.$el as HTMLElement).addEventListener('click', this.handleClick);
+		});
+	},
+	beforeUnmount() {
+		(this.$el as HTMLElement).removeEventListener('click', this.handleClick);
+	}
 };
 </script>
 
 <template>
-    <div :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
+    <div ref="wrapperRef" :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
         <div data-animate-into-view="fadeIn">
             <component :is="MarkdownFileContent"/>
         </div>

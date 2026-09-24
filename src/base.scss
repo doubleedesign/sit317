@@ -47,7 +47,8 @@ body {
 	&__footer {
 		&__footnotes {
 			--theme-color: var(--color-primary);
-			
+			scroll-margin-top: var(--spacing-xl);
+
 			&:is(details) {
 				interpolate-size: allow-keywords;
 				padding: var(--spacing-md);

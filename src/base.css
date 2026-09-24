@@ -971,6 +971,7 @@ body {
 }
 .markdown-body__footer__footnotes {
   --theme-color: var(--color-primary);
+  scroll-margin-top: var(--spacing-xl);
 }
 .markdown-body__footer__footnotes:is(details) {
   interpolate-size: allow-keywords;
