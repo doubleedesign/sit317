@@ -19,7 +19,6 @@ body {
 }
 
 [data-animate-into-view] {
-	animation-delay: 0.3s;
 }
 
 #app {
@@ -29,7 +28,7 @@ body {
 	overflow-x: scroll;
 
 	@media (min-width: 400px) {
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 }
 

@@ -159,7 +159,6 @@ export default {
         position: absolute;
         right: calc(-1 * var(--spacing-xxl));
         bottom: 0;
-        transform: rotate(2deg);
         display: flex;
         justify-content: flex-end;
         z-index: 20;
@@ -169,7 +168,6 @@ export default {
             left: 0;
             right: unset;
             justify-content: flex-start;
-            transform: rotate(-2deg);
         }
 
         @include container-width-up('contained') {
@@ -178,6 +176,11 @@ export default {
         &__copy {
             width: fit-content;
             @include curved-shadow();
+            transform: rotate(2deg);
+
+            @include container-width-up('narrow') {
+                transform: rotate(-2deg) translateY(2rem);
+            }
 
             :deep(.markdown-body) {
                 padding: var(--spacing-lg) var(--spacing-xl);

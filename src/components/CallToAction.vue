@@ -4,8 +4,8 @@ export default {};
 
 <template>
     <section class="call-to-action" data-size="narrow">
-        <div class="call-to-action__inner" data-background="secondary" data-animate-into-view="fadeInUp" data-animation-threshold="0.5">
-            <div class="call-to-action__inner__content">
+        <div class="call-to-action__inner" data-animate-into-view="fadeInUp" data-animation-threshold="0.75">
+            <div class="call-to-action__inner__content" data-background="secondary">
                 <h2>Level up <strong>this O Week</strong></h2>
                 <p>Run a SpeedFriending event and kick-start campus culture in 2027!</p>
                 <div class="button-group" role="group" data-halign="center">
@@ -29,13 +29,14 @@ export default {};
 
     &__inner {
         @include curved-shadow();
-        transform: rotate(1deg);
+        animation-delay: 0.3s;
 
         @include media-breakpoint-up('narrow') {
             gap: var(--spacing-lg);
         }
 
         &__content {
+            transform: rotate(1deg);
             text-align: center;
             padding-block: var(--spacing-xl);
             padding-inline: var(--spacing-lg);
