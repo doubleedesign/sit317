@@ -3,6 +3,12 @@
 A landing page for a product my team is working on in SIT317 IT Innovations & Entrepreneurship at Deakin University,
 Trimester 2 2026.
 
+## Run locally
+
+1. Clone the repository
+2. Install dependencies with `pnpm install`
+3. Run in dev mode with `pnpm run dev`
+
 ## Credits
 
 - **Banner image:** [PixelShot](https://pixel-shot.com/showcase/i-11152110-0/group-of-students-studying-on-floor-at-university-top-view)
