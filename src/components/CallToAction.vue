@@ -1,6 +1,6 @@
 <script lang="ts">
 export default {};
-</script>;
+</script>
 
 <template>
     <section class="call-to-action" data-size="narrow">

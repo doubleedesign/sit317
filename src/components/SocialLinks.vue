@@ -1,8 +1,6 @@
 <script lang="ts">
 
-
 export default {
-	props: {},
 	data() {
 		return {
 			items: [
@@ -14,9 +12,7 @@ export default {
 				{ label: 'UniNexus on Discord', icon: '<i class="bi bi-discord"></i>', url: '#' },
 			]
 		};
-	},
-	computed: {},
-	methods: {}
+	}
 };
 </script>
 

@@ -5,7 +5,6 @@ export default {
 	components: {
 		TextBlock
 	},
-	props: {},
 	data() {
 		return {
 			features: [
@@ -26,9 +25,7 @@ export default {
 				}
 			]
 		};
-	},
-	computed: {},
-	methods: {}
+	}
 };
 </script>
 
@@ -142,4 +139,4 @@ export default {
         }
     }
 }
-</style>;
+</style>

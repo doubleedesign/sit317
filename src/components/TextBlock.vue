@@ -16,9 +16,6 @@ export default {
 			default: ''
 		}
 	},
-	data() {
-		return {};
-	},
 	computed: {
 		MarkdownFileContent() {
 			const name = this.content;
@@ -28,7 +25,6 @@ export default {
 			);
 		}
 	},
-	methods: {}
 };
 </script>
 
@@ -38,7 +34,7 @@ export default {
             <component :is="MarkdownFileContent"/>
         </div>
     </div>
-</template>;
+</template>
 
 <style scoped lang="scss">
 @use '@/mixins' as *;
