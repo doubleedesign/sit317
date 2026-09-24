@@ -77,6 +77,23 @@ export default {
     padding-block: var(--spacing-xxl);
     z-index: 20;
 
+    .markdown-wrapper {
+        height: auto;
+
+        // Set an initial height that will prevent the animations from triggering before the markdown content loads
+        &:empty {
+            min-height: 100dvh;
+        }
+
+        &[data-animation-threshold="0.25"] {
+            animation-delay: 0.5s;
+        }
+
+        &:has(:deep(.markdown-body blockquote:only-child)) {
+            animation-delay: 0.4s;
+        }
+    }
+
     &:first-child {
         :deep(.markdown-body) {
             p:first-child {
