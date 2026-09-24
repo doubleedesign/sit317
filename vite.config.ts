@@ -35,7 +35,12 @@ export default defineConfig({
                         </footer>
                         `;
 					},
-					footnote_open: () => '<li>',
+					footnote_open: (tokens, idx, options, env, slf) => {
+						let id = slf.rules.footnote_anchor_name?.(tokens, idx, options, env, slf);
+						if (tokens[idx].meta.subId > 0) id += `:${tokens[idx].meta.subId}`;
+
+						return `<li id="fn${id}">`;
+					},
 					footnote_close: () => '</li>',
 				};
 				md.core.ruler.push('footnote_strip_paragraphs', (state) => {
