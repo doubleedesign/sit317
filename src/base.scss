@@ -9,6 +9,10 @@
 	--font-family-accent: 'Gochi Hand', cursive;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	padding: 0;
 	margin: 0;
@@ -42,6 +46,8 @@ body {
 
 	&__footer {
 		&__footnotes {
+			--theme-color: var(--color-primary);
+			
 			&:is(details) {
 				interpolate-size: allow-keywords;
 				padding: var(--spacing-md);
@@ -64,7 +70,7 @@ body {
 					font-size: var(--font-size-lg);
 					line-height: 1.2;
 
-					@include media-breakpoint-up('wide') {
+					@include media-breakpoint-up('contained') {
 						font-size: var(--font-size-md);
 					}
 
@@ -92,6 +98,18 @@ body {
 
 						:has([open]) & {
 							transform: rotate(90deg);
+						}
+					}
+				}
+
+				ol {
+					li {
+						font-size: var(--font-size-sm);
+						margin-block-end: var(--spacing-sm);
+						color: currentColor;
+
+						a {
+							@include link-underline-on-hover();
 						}
 					}
 				}

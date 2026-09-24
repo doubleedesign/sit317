@@ -936,6 +936,10 @@ figure figcaption {
   --font-family-accent: 'Gochi Hand', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -965,6 +969,9 @@ body {
 .markdown-body h1:first-child {
   margin-block-start: var(--spacing-md);
 }
+.markdown-body__footer__footnotes {
+  --theme-color: var(--color-primary);
+}
 .markdown-body__footer__footnotes:is(details) {
   interpolate-size: allow-keywords;
   padding: var(--spacing-md);
@@ -987,7 +994,7 @@ body {
   font-size: var(--font-size-lg);
   line-height: 1.2;
 }
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
   .markdown-body__footer__footnotes:is(details) summary {
     font-size: var(--font-size-md);
   }
@@ -1013,6 +1020,35 @@ body {
 }
 :has([open]) .markdown-body__footer__footnotes:is(details) summary i, :has([open]) .markdown-body__footer__footnotes:is(details) summary svg {
   transform: rotate(90deg);
+}
+.markdown-body__footer__footnotes:is(details) ol li {
+  font-size: var(--font-size-sm);
+  margin-block-end: var(--spacing-sm);
+  color: currentColor;
+}
+.markdown-body__footer__footnotes:is(details) ol li a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  transition: all 0.2s ease-in-out;
+}
+.markdown-body__footer__footnotes:is(details) ol li a:hover, .markdown-body__footer__footnotes:is(details) ol li a:focus, .markdown-body__footer__footnotes:is(details) ol li a:active {
+  text-decoration-color: currentColor;
+  opacity: 1;
+}
+.markdown-body__footer__footnotes:is(details) ol li a:has(> span) {
+  text-decoration: none;
+}
+.markdown-body__footer__footnotes:is(details) ol li a:has(> span) > span:not(:has(svg)):not(:has(i)) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: currentColor;
+  transition: all 0.2s ease-in-out;
+  text-decoration-color: transparent;
+}
+.markdown-body__footer__footnotes:is(details) ol li a:has(> span):hover > span:not(:has(svg)):not(:has(i)), .markdown-body__footer__footnotes:is(details) ol li a:has(> span):focus > span:not(:has(svg)):not(:has(i)), .markdown-body__footer__footnotes:is(details) ol li a:has(> span):active > span:not(:has(svg)):not(:has(i)) {
+  text-decoration-color: currentColor;
 }
 .markdown-body__footer__footnotes:is(details):open {
   background: var(--color-light);
