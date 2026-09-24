@@ -13,6 +13,7 @@ import FeatureRow from '@/components/FeatureRow.vue';
     <main>
         <TextBlock content="intro" color="accent" background="primary"/>
         <TextBlock content="body" background="primary"/>
+        <TextBlock content="testimonial" background="primary-accent" animation="fadeInDown"/>
         <FeatureRow/>
     </main>
     <CallToAction/>

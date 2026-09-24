@@ -11,6 +11,10 @@ export default {
 			type: String || undefined,
 			default: undefined
 		},
+		animation: {
+			type: String,
+			default: 'fadeIn'
+		},
 		content: {
 			type: String,
 			default: ''
@@ -59,7 +63,7 @@ export default {
 
 <template>
     <div ref="wrapperRef" :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
-        <div data-animate-into-view="fadeIn">
+        <div :data-animate-into-view="animation">
             <component :is="MarkdownFileContent"/>
         </div>
     </div>

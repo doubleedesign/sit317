@@ -15,15 +15,105 @@
   --spacing-xl: 2rem;
   --spacing-xxl: 2.827rem;
   --color-primary: rgb(93.24, 83.55, 180.45);
+  --gradient-primary-secondary: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-primary-accent: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-primary-info: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-primary-warning: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-primary-success: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-primary-error: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-primary-light: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-primary-dark: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-primary-white: linear-gradient(180deg, var(--color-primary) 0%, var(--color-primary) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-secondary: rgb(249.4, 211.0042105263, 83.6);
+  --gradient-secondary-primary: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-secondary-accent: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-secondary-info: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-secondary-warning: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-secondary-success: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-secondary-error: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-secondary-light: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-secondary-dark: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-secondary-white: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-secondary) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-accent: #fa648f;
+  --gradient-accent-primary: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-accent-secondary: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-accent-info: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-accent-warning: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-accent-success: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-accent-error: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-accent-light: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-accent-dark: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-accent-white: linear-gradient(180deg, var(--color-accent) 0%, var(--color-accent) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-info: #008aac;
+  --gradient-info-primary: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-info-secondary: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-info-accent: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-info-warning: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-info-success: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-info-error: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-info-light: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-info-dark: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-info-white: linear-gradient(180deg, var(--color-info) 0%, var(--color-info) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-warning: #ffc25d;
+  --gradient-warning-primary: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-warning-secondary: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-warning-accent: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-warning-info: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-warning-success: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-warning-error: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-warning-light: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-warning-dark: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-warning-white: linear-gradient(180deg, var(--color-warning) 0%, var(--color-warning) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-success: #00c89b;
+  --gradient-success-primary: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-success-secondary: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-success-accent: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-success-info: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-success-warning: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-success-error: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-success-light: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-success-dark: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-success-white: linear-gradient(180deg, var(--color-success) 0%, var(--color-success) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-error: #b03434;
+  --gradient-error-primary: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-error-secondary: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-error-accent: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-error-info: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-error-warning: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-error-success: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-error-light: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-error-dark: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-error-white: linear-gradient(180deg, var(--color-error) 0%, var(--color-error) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-light: #f5f5f7;
+  --gradient-light-primary: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-light-secondary: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-light-accent: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-light-info: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-light-warning: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-light-success: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-light-error: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-light-dark: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
+  --gradient-light-white: linear-gradient(180deg, var(--color-light) 0%, var(--color-light) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-dark: #24232a;
+  --gradient-dark-primary: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-dark-secondary: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-dark-accent: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-dark-info: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-dark-warning: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-dark-success: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-dark-error: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-dark-light: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-dark-white: linear-gradient(180deg, var(--color-dark) 0%, var(--color-dark) 50%, var(--color-white) 50%, var(--color-white) 100%);
   --color-white: #ffffff;
+  --gradient-white-primary: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-primary) 50%, var(--color-primary) 100%);
+  --gradient-white-secondary: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-secondary) 50%, var(--color-secondary) 100%);
+  --gradient-white-accent: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-accent) 50%, var(--color-accent) 100%);
+  --gradient-white-info: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-info) 50%, var(--color-info) 100%);
+  --gradient-white-warning: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-warning) 50%, var(--color-warning) 100%);
+  --gradient-white-success: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-success) 50%, var(--color-success) 100%);
+  --gradient-white-error: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-error) 50%, var(--color-error) 100%);
+  --gradient-white-light: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-light) 50%, var(--color-light) 100%);
+  --gradient-white-dark: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 50%, var(--color-dark) 50%, var(--color-dark) 100%);
 }
 
 * {
@@ -138,12 +228,12 @@
 }
 @container layout-section (min-width: 600px) {
   [data-group-layout=grid][data-max-per-row="2"]:has(> :nth-child(2)), [data-group-layout=grid][data-max-per-row="4"]:has(> :nth-child(2)) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: var(--width-small)) {
   [data-group-layout=grid][data-max-per-row="2"]:has(> :nth-child(2)), [data-group-layout=grid][data-max-per-row="4"]:has(> :nth-child(2)) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: 768px) {
@@ -151,7 +241,7 @@
     grid-template-columns: repeat(auto-fit, 25%);
   }
   [data-group-layout=grid][data-max-per-row="4"]:has(> :nth-child(4)) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: var(--width-narrower)) {
@@ -159,7 +249,7 @@
     grid-template-columns: repeat(auto-fit, 25%);
   }
   [data-group-layout=grid][data-max-per-row="4"]:has(> :nth-child(4)) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: 600px) {
@@ -167,7 +257,7 @@
     grid-template-columns: repeat(auto-fit, 33%);
   }
   [data-group-layout=grid][data-max-per-row="3"]:has(> :nth-child(3)), [data-group-layout=grid][data-max-per-row="5"]:has(> :nth-child(3)), [data-group-layout=grid][data-max-per-row="6"]:has(> :nth-child(3)) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: var(--width-small)) {
@@ -175,7 +265,7 @@
     grid-template-columns: repeat(auto-fit, 33%);
   }
   [data-group-layout=grid][data-max-per-row="3"]:has(> :nth-child(3)), [data-group-layout=grid][data-max-per-row="5"]:has(> :nth-child(3)), [data-group-layout=grid][data-max-per-row="6"]:has(> :nth-child(3)) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: 768px) {
@@ -183,7 +273,7 @@
     grid-template-columns: repeat(auto-fit, 20%);
   }
   [data-group-layout=grid][data-max-per-row="5"]:has(> :nth-child(5)) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: var(--width-narrower)) {
@@ -191,7 +281,7 @@
     grid-template-columns: repeat(auto-fit, 20%);
   }
   [data-group-layout=grid][data-max-per-row="5"]:has(> :nth-child(5)) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: 768px) {
@@ -199,7 +289,7 @@
     grid-template-columns: repeat(auto-fit, 16.66%);
   }
   [data-group-layout=grid][data-max-per-row="6"]:has(> :nth-child(6)) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 @container layout-section (min-width: var(--width-narrower)) {
@@ -207,7 +297,7 @@
     grid-template-columns: repeat(auto-fit, 16.66%);
   }
   [data-group-layout=grid][data-max-per-row="6"]:has(> :nth-child(6)) {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
 
@@ -273,6 +363,366 @@ body[data-global-background=primary] {
   --active-color: var(--color-secondary);
 }
 
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
+}
+
 [data-background=primary] > [data-background=primary] {
   padding: 0;
 }
@@ -295,6 +745,366 @@ body[data-global-background=secondary] {
 [data-background=secondary] {
   --background-color: var(--color-secondary);
   --active-color: var(--color-secondary);
+}
+
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
 }
 
 [data-background=secondary] > [data-background=secondary] {
@@ -321,6 +1131,366 @@ body[data-global-background=accent] {
   --active-color: var(--color-secondary);
 }
 
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
+}
+
 [data-background=accent] > [data-background=accent] {
   padding: 0;
 }
@@ -343,6 +1513,366 @@ body[data-global-background=info] {
 [data-background=info] {
   --background-color: var(--color-info);
   --active-color: var(--color-secondary);
+}
+
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
 }
 
 [data-background=info] > [data-background=info] {
@@ -369,6 +1899,366 @@ body[data-global-background=warning] {
   --active-color: var(--color-secondary);
 }
 
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
+}
+
 [data-background=warning] > [data-background=warning] {
   padding: 0;
 }
@@ -391,6 +2281,366 @@ body[data-global-background=success] {
 [data-background=success] {
   --background-color: var(--color-success);
   --active-color: var(--color-secondary);
+}
+
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
 }
 
 [data-background=success] > [data-background=success] {
@@ -417,6 +2667,366 @@ body[data-global-background=error] {
   --active-color: var(--color-secondary);
 }
 
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
+}
+
 [data-background=error] > [data-background=error] {
   padding: 0;
 }
@@ -439,6 +3049,366 @@ body[data-global-background=light] {
 [data-background=light] {
   --background-color: var(--color-light);
   --active-color: var(--color-secondary);
+}
+
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
 }
 
 [data-background=light] > [data-background=light] {
@@ -465,6 +3435,366 @@ body[data-global-background=dark] {
   --active-color: var(--color-secondary);
 }
 
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
+}
+
 [data-background=dark] > [data-background=dark] {
   padding: 0;
 }
@@ -487,6 +3817,366 @@ body[data-global-background=white] {
 [data-background=white] {
   --background-color: var(--color-white);
   --active-color: var(--color-secondary);
+}
+
+[data-background=primary-secondary] {
+  --background-color: var(--gradient-primary-secondary);
+}
+
+[data-background=primary-accent] {
+  --background-color: var(--gradient-primary-accent);
+}
+
+[data-background=primary-info] {
+  --background-color: var(--gradient-primary-info);
+}
+
+[data-background=primary-warning] {
+  --background-color: var(--gradient-primary-warning);
+}
+
+[data-background=primary-success] {
+  --background-color: var(--gradient-primary-success);
+}
+
+[data-background=primary-error] {
+  --background-color: var(--gradient-primary-error);
+}
+
+[data-background=primary-light] {
+  --background-color: var(--gradient-primary-light);
+}
+
+[data-background=primary-dark] {
+  --background-color: var(--gradient-primary-dark);
+}
+
+[data-background=primary-white] {
+  --background-color: var(--gradient-primary-white);
+}
+
+[data-background=secondary-primary] {
+  --background-color: var(--gradient-secondary-primary);
+}
+
+[data-background=secondary-accent] {
+  --background-color: var(--gradient-secondary-accent);
+}
+
+[data-background=secondary-info] {
+  --background-color: var(--gradient-secondary-info);
+}
+
+[data-background=secondary-warning] {
+  --background-color: var(--gradient-secondary-warning);
+}
+
+[data-background=secondary-success] {
+  --background-color: var(--gradient-secondary-success);
+}
+
+[data-background=secondary-error] {
+  --background-color: var(--gradient-secondary-error);
+}
+
+[data-background=secondary-light] {
+  --background-color: var(--gradient-secondary-light);
+}
+
+[data-background=secondary-dark] {
+  --background-color: var(--gradient-secondary-dark);
+}
+
+[data-background=secondary-white] {
+  --background-color: var(--gradient-secondary-white);
+}
+
+[data-background=accent-primary] {
+  --background-color: var(--gradient-accent-primary);
+}
+
+[data-background=accent-secondary] {
+  --background-color: var(--gradient-accent-secondary);
+}
+
+[data-background=accent-info] {
+  --background-color: var(--gradient-accent-info);
+}
+
+[data-background=accent-warning] {
+  --background-color: var(--gradient-accent-warning);
+}
+
+[data-background=accent-success] {
+  --background-color: var(--gradient-accent-success);
+}
+
+[data-background=accent-error] {
+  --background-color: var(--gradient-accent-error);
+}
+
+[data-background=accent-light] {
+  --background-color: var(--gradient-accent-light);
+}
+
+[data-background=accent-dark] {
+  --background-color: var(--gradient-accent-dark);
+}
+
+[data-background=accent-white] {
+  --background-color: var(--gradient-accent-white);
+}
+
+[data-background=info-primary] {
+  --background-color: var(--gradient-info-primary);
+}
+
+[data-background=info-secondary] {
+  --background-color: var(--gradient-info-secondary);
+}
+
+[data-background=info-accent] {
+  --background-color: var(--gradient-info-accent);
+}
+
+[data-background=info-warning] {
+  --background-color: var(--gradient-info-warning);
+}
+
+[data-background=info-success] {
+  --background-color: var(--gradient-info-success);
+}
+
+[data-background=info-error] {
+  --background-color: var(--gradient-info-error);
+}
+
+[data-background=info-light] {
+  --background-color: var(--gradient-info-light);
+}
+
+[data-background=info-dark] {
+  --background-color: var(--gradient-info-dark);
+}
+
+[data-background=info-white] {
+  --background-color: var(--gradient-info-white);
+}
+
+[data-background=warning-primary] {
+  --background-color: var(--gradient-warning-primary);
+}
+
+[data-background=warning-secondary] {
+  --background-color: var(--gradient-warning-secondary);
+}
+
+[data-background=warning-accent] {
+  --background-color: var(--gradient-warning-accent);
+}
+
+[data-background=warning-info] {
+  --background-color: var(--gradient-warning-info);
+}
+
+[data-background=warning-success] {
+  --background-color: var(--gradient-warning-success);
+}
+
+[data-background=warning-error] {
+  --background-color: var(--gradient-warning-error);
+}
+
+[data-background=warning-light] {
+  --background-color: var(--gradient-warning-light);
+}
+
+[data-background=warning-dark] {
+  --background-color: var(--gradient-warning-dark);
+}
+
+[data-background=warning-white] {
+  --background-color: var(--gradient-warning-white);
+}
+
+[data-background=success-primary] {
+  --background-color: var(--gradient-success-primary);
+}
+
+[data-background=success-secondary] {
+  --background-color: var(--gradient-success-secondary);
+}
+
+[data-background=success-accent] {
+  --background-color: var(--gradient-success-accent);
+}
+
+[data-background=success-info] {
+  --background-color: var(--gradient-success-info);
+}
+
+[data-background=success-warning] {
+  --background-color: var(--gradient-success-warning);
+}
+
+[data-background=success-error] {
+  --background-color: var(--gradient-success-error);
+}
+
+[data-background=success-light] {
+  --background-color: var(--gradient-success-light);
+}
+
+[data-background=success-dark] {
+  --background-color: var(--gradient-success-dark);
+}
+
+[data-background=success-white] {
+  --background-color: var(--gradient-success-white);
+}
+
+[data-background=error-primary] {
+  --background-color: var(--gradient-error-primary);
+}
+
+[data-background=error-secondary] {
+  --background-color: var(--gradient-error-secondary);
+}
+
+[data-background=error-accent] {
+  --background-color: var(--gradient-error-accent);
+}
+
+[data-background=error-info] {
+  --background-color: var(--gradient-error-info);
+}
+
+[data-background=error-warning] {
+  --background-color: var(--gradient-error-warning);
+}
+
+[data-background=error-success] {
+  --background-color: var(--gradient-error-success);
+}
+
+[data-background=error-light] {
+  --background-color: var(--gradient-error-light);
+}
+
+[data-background=error-dark] {
+  --background-color: var(--gradient-error-dark);
+}
+
+[data-background=error-white] {
+  --background-color: var(--gradient-error-white);
+}
+
+[data-background=light-primary] {
+  --background-color: var(--gradient-light-primary);
+}
+
+[data-background=light-secondary] {
+  --background-color: var(--gradient-light-secondary);
+}
+
+[data-background=light-accent] {
+  --background-color: var(--gradient-light-accent);
+}
+
+[data-background=light-info] {
+  --background-color: var(--gradient-light-info);
+}
+
+[data-background=light-warning] {
+  --background-color: var(--gradient-light-warning);
+}
+
+[data-background=light-success] {
+  --background-color: var(--gradient-light-success);
+}
+
+[data-background=light-error] {
+  --background-color: var(--gradient-light-error);
+}
+
+[data-background=light-dark] {
+  --background-color: var(--gradient-light-dark);
+}
+
+[data-background=light-white] {
+  --background-color: var(--gradient-light-white);
+}
+
+[data-background=dark-primary] {
+  --background-color: var(--gradient-dark-primary);
+}
+
+[data-background=dark-secondary] {
+  --background-color: var(--gradient-dark-secondary);
+}
+
+[data-background=dark-accent] {
+  --background-color: var(--gradient-dark-accent);
+}
+
+[data-background=dark-info] {
+  --background-color: var(--gradient-dark-info);
+}
+
+[data-background=dark-warning] {
+  --background-color: var(--gradient-dark-warning);
+}
+
+[data-background=dark-success] {
+  --background-color: var(--gradient-dark-success);
+}
+
+[data-background=dark-error] {
+  --background-color: var(--gradient-dark-error);
+}
+
+[data-background=dark-light] {
+  --background-color: var(--gradient-dark-light);
+}
+
+[data-background=dark-white] {
+  --background-color: var(--gradient-dark-white);
+}
+
+[data-background=white-primary] {
+  --background-color: var(--gradient-white-primary);
+}
+
+[data-background=white-secondary] {
+  --background-color: var(--gradient-white-secondary);
+}
+
+[data-background=white-accent] {
+  --background-color: var(--gradient-white-accent);
+}
+
+[data-background=white-info] {
+  --background-color: var(--gradient-white-info);
+}
+
+[data-background=white-warning] {
+  --background-color: var(--gradient-white-warning);
+}
+
+[data-background=white-success] {
+  --background-color: var(--gradient-white-success);
+}
+
+[data-background=white-error] {
+  --background-color: var(--gradient-white-error);
+}
+
+[data-background=white-light] {
+  --background-color: var(--gradient-white-light);
+}
+
+[data-background=white-dark] {
+  --background-color: var(--gradient-white-dark);
 }
 
 [data-background=white] > [data-background=white] {
@@ -968,6 +4658,101 @@ body {
 }
 .markdown-body h1:first-child {
   margin-block-start: var(--spacing-md);
+}
+.markdown-body:has(blockquote:only-child) {
+  position: relative;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  outline: 1px solid transparent;
+  isolation: isolate;
+  transform: translateZ(0);
+}
+.markdown-body:has(blockquote:only-child)[data-background=primary] > div {
+  background: var(--color-primary);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=secondary] > div {
+  background: var(--color-secondary);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=accent] > div {
+  background: var(--color-accent);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=info] > div {
+  background: var(--color-info);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=warning] > div {
+  background: var(--color-warning);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=success] > div {
+  background: var(--color-success);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=error] > div {
+  background: var(--color-error);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=light] > div {
+  background: var(--color-light);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=dark] > div {
+  background: var(--color-dark);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child)[data-background=white] > div {
+  background: var(--color-white);
+  position: relative;
+  z-index: 10;
+}
+.markdown-body:has(blockquote:only-child):before, .markdown-body:has(blockquote:only-child):after {
+  left: 1rem;
+  right: 1rem;
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  height: 20px;
+  z-index: -1;
+  transform: translateZ(-1px);
+}
+.markdown-body:has(blockquote:only-child):before {
+  top: 0;
+}
+.markdown-body:has(blockquote:only-child):after {
+  bottom: 0;
+}
+.markdown-body:has(blockquote:only-child) {
+  transform: rotate(1deg);
+}
+.markdown-body blockquote {
+  background: white;
+  margin: 0;
+  text-wrap: balance;
+  padding: var(--spacing-lg);
+}
+.markdown-body blockquote p {
+  margin: 0;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-bold);
+}
+.markdown-body blockquote cite {
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: var(--font-size-sm);
 }
 .markdown-body__footer__footnotes {
   --theme-color: var(--color-primary);

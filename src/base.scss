@@ -44,6 +44,30 @@ body {
 		}
 	}
 
+	&:has(blockquote:only-child) {
+		@include curved-shadow();
+		transform: rotate(1deg);
+	}
+
+	blockquote {
+		background: white;
+		margin: 0;
+		text-wrap: balance;
+		padding: var(--spacing-lg);
+
+		p {
+			margin: 0;
+			font-size: var(--font-size-md);
+			font-weight: var(--font-weight-bold);
+		}
+
+		cite {
+			font-style: normal;
+			text-transform: uppercase;
+			font-size: var(--font-size-sm);
+		}
+	}
+
 	&__footer {
 		&__footnotes {
 			--theme-color: var(--color-primary);
