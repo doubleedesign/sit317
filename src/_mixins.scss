@@ -247,7 +247,7 @@
 			@if $wait-for-min-items {
 				// Only go to 2 columns if there are 2 or more items
 				&:has(> :nth-child(2)) {
-					grid-template-columns: repeat(2, 1fr);
+					grid-template-columns: repeat(2, minmax(0, 1fr));
 				}
 			}
 		}
@@ -260,7 +260,7 @@
 			@if $wait-for-min-items {
 				// Only go to 4 column grid if there are actually 4 or more items
 				&:has(> :nth-child(4)) {
-					grid-template-columns: repeat(4, 1fr);
+					grid-template-columns: repeat(4, minmax(0, 1fr));
 				}
 			}
 		}
@@ -273,7 +273,7 @@
 			@if $wait-for-min-items {
 				// Only go to 4 column grid if there are actually 3 or more items
 				&:has(> :nth-child(3)) {
-					grid-template-columns: repeat(3, 1fr);
+					grid-template-columns: repeat(3, minmax(0, 1fr));
 				}
 			}
 		}
@@ -286,7 +286,7 @@
 			@if $wait-for-min-items {
 				// Only go to 5 column grid if there are actually 5 or more items
 				&:has(> :nth-child(5)) {
-					grid-template-columns: repeat(5, 1fr);
+					grid-template-columns: repeat(5, minmax(0, 1fr));
 				}
 			}
 		}
@@ -299,7 +299,7 @@
 			@if $wait-for-min-items {
 				// Only go to 6 column grid if there are actually 6 or more items
 				&:has(> :nth-child(6)) {
-					grid-template-columns: repeat(6, 1fr);
+					grid-template-columns: repeat(6, minmax(0, 1fr));
 				}
 			}
 		}

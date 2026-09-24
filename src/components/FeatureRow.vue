@@ -67,7 +67,7 @@ export default {
     }
 
     :deep(.text-block) {
-        padding-block-end: var(--spacing-lg);
+        padding-block: 0;
 
         h2 + p {
             font-size: 1.125rem;
@@ -76,10 +76,17 @@ export default {
 
     &__list {
         margin: 0;
+        padding-block: var(--spacing-xl);
+
+        @include media-breakpoint-up('contained') {
+            padding-block: var(--spacing-xxl);
+        }
 
         &__item {
             list-style: none;
             @include curved-shadow();
+            display: flex;
+            flex-direction: column;
 
             @include media-breakpoint-up('narrow') {
                 &:nth-child(3n+2) {
@@ -103,6 +110,7 @@ export default {
             }
 
             &__inner {
+                flex-grow: 1;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
