@@ -14,8 +14,8 @@ import '@doubleedesign/animate-into-view/dist/animate-into-view.js';
     <HeroBanner/>
     <main>
         <TextBlock content="intro" color="accent" background="primary"/>
-        <TextBlock content="body" background="primary"/>
-        <TextBlock content="testimonial" background="primary-accent" animation="fadeInDown"/>
+        <TextBlock content="body" background="primary" :animation-threshold="0.25"/>
+        <TextBlock content="testimonial" background="primary-accent" animation="fadeInDown" :animation-threshold="0.5"/>
         <FeatureRow/>
     </main>
     <CallToAction/>

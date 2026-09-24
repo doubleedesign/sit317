@@ -15,6 +15,10 @@ export default {
 			type: String,
 			default: 'fadeIn'
 		},
+		animationThreshold: {
+			type: Number,
+			default: 0.5
+		},
 		content: {
 			type: String,
 			default: ''
@@ -63,7 +67,7 @@ export default {
 
 <template>
     <div ref="wrapperRef" :class="['text-block', `text-block__${content}`]" data-size="narrow" :data-color-theme="color" :data-background="background">
-        <div :data-animate-into-view="animation">
+        <div class="markdown-wrapper" :data-animate-into-view="animation" :data-animation-threshold="animationThreshold">
             <component :is="MarkdownFileContent"/>
         </div>
     </div>

@@ -37,7 +37,7 @@ export default {
                 class="features__list__item"
                 data-background="white"
                 data-animate-into-view="fadeInLeft"
-                data-animation-threshold="0.5"
+                data-animation-threshold="0.8"
             >
                 <div v-if="feature.image" class="features__list__item__image" data-aspect-ratio="wide">
                     <img :src="`/${feature.image}`" alt=""/>

@@ -119,7 +119,7 @@ export default {
     &__image {
         transition: aspect-ratio 0.2s ease-in-out;
         height: 100%;
-        animation-delay: 0.6s;
+        animation-delay: 0.4s;
 
         img {
             display: block;
@@ -162,7 +162,6 @@ export default {
         display: flex;
         justify-content: flex-end;
         z-index: 20;
-        animation-delay: 0.6s;
 
         @include container-width-up('narrow') {
             left: 0;
